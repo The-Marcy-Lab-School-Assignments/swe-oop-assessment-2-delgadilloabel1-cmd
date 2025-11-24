@@ -102,8 +102,6 @@ In the code snippet, `this` refers to the individual `Counter` instance. So insi
 
 This is why the final output logs different values for `counterA.count` and `counterB.count`.
 
----
-
 ## Question 3
 
 In your own words, explain what **polymorphism** means in OOP. Provide an example in code that demonstrates polymorphism.
@@ -165,8 +163,6 @@ console.log(pet1.sleep()); // This calls the sleep() method from the Pet class
 const dog1 = new Dog("Canelo", 10, 5);
 console.log(dog1.sleep()); // This calls the overridden sleep() method from the Dog class
 ```
-
----
 
 ## Question 4
 
