@@ -30,9 +30,8 @@ class Pokemon {
   isFainted() {
     if (this.#health <= 0) {
       return true;
-    } else {
-      return false;
     }
+    return false;
   }
 
   attack(targetPokemon) {

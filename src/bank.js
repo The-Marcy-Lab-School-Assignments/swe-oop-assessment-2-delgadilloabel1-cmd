@@ -13,23 +13,23 @@ class BankAccount {
 
   deposit(amount) {
     this.#balance += amount; // added # to balance
-    console.log(`Deposited $${amount}. New balance: $${this.#balance}`); //added # to balance
-    return this.#balance; //added # to balance
+    console.log(`Deposited $${amount}. New balance: $${this.#balance}`); // added # to balance
+    return this.#balance; // added # to balance
   }
 
   withdraw(amount) {
     if (amount > this.#balance) {
-      //added # to balance
+      // added # to balance
       console.log(`Withdrawal failed. Insufficient funds.`);
     } else {
-      this.#balance -= amount; //added # to balance
-      console.log(`Withdrew $${amount}. New balance: $${this.#balance}`); //added # to balance
+      this.#balance -= amount; // added # to balance
+      console.log(`Withdrew $${amount}. New balance: $${this.#balance}`); // added # to balance
     }
     return this.#balance;
   }
 
   getBalance() {
-    //return #balance;
+    // return #balance;
     return this.#balance;
   }
 
@@ -53,16 +53,16 @@ class Bank {
   getTotalBalance() {
     let total = 0;
     this.accounts.forEach((account) => {
-      //total += account.balance;
+      // total += account.balance;
       total += account.getBalance();
     });
     return total;
   }
 
   findAccount(accountNumber) {
-    //return accounts.find((account) => account.accountNumber = accountNumber);
+    // return accounts.find((account) => account.accountNumber = accountNumber);
     return this.accounts.find(
-      (account) => account.accountNumber === accountNumber
+      (account) => account.accountNumber === accountNumber,
     );
   }
 }

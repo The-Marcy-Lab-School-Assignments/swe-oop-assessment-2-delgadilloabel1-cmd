@@ -21,9 +21,8 @@ class Phone {
   unlock(password) {
     if (password === this.#password) {
       return true;
-    } else {
-      return false;
     }
+    return false;
   }
 
   get battery() {
@@ -33,7 +32,7 @@ class Phone {
 
 class iPhone extends Phone {
   constructor(model, password, numberOfCameras) {
-    super("Apple", model, password);
+    super('Apple', model, password);
     this.numberOfCameras = numberOfCameras;
     this.batteryLevel = 100;
   }
